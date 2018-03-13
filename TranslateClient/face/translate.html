@@ -1,0 +1,32 @@
+<!-- <!DOCTYPE html> -->
+<html>
+<head>
+<meta charset="UTF-8">
+<title>翻译助手face路径下</title>
+<script>
+	function queryWord() {
+		if (document.frmCalc.query_word.value == "") {
+			alert("必须输入单词");
+			document.frmCalc.query_word.focus();
+			return;
+		}
+		document.frmCalc.submit();
+	}
+</script>
+</head>
+<body>
+
+	<table style="width: 100px; border: 1px solid; height: 100px">
+		<form name="frmCalc" method="post" action="/servlet/translateServlet">
+			<tr bgcolor="#C0C0C0">
+				<td colspan="4" align="center">翻译助手</td>
+			</tr>
+			<tr>
+				<td><input type="text" name="query_word" size="20"></td>
+				<td><input type=button name=btnSubmit value="查询" onclick="queryWord();"></td>
+			</tr>
+		</form>
+	</table>
+
+</body>
+</html>

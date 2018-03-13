@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: TranslateAsslt
+Bundle-SymbolicName: TranslateAsslt
+Bundle-Version: 1.0.0.qualifier
+Bundle-Activator: com.zhbr.translateasslt.Activator
+Bundle-Vendor: com.zhbr
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Import-Package: org.osgi.framework;version="1.3.0"
+Export-Package: com.zhbr.translateasslt.service
